@@ -7,6 +7,12 @@ program allows its user to enter results from tournaments and then export the cu
 calculations of Individual Event standings require knowledge of information not publicly released, any found using this 
 program are to a certain degree estimates. Completely accurate debate standings can be found if all records are known.
 
+## Usage
+
+Pretty easy (as long as you have Ruby installed): just download the contents of the `lib` folder into its very own 
+directory on your computer and run `interface.rb`. Use `new` to input results from a tournament and `export` to export 
+standings to a text file. It requires at least Ruby 2.1.0.
+
 ## Organization
 
 Results information are stored in CSV files. The logic concerned with placing results in those files are found in the 
