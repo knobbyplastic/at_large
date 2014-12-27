@@ -11,7 +11,8 @@ program are to a certain degree estimates. Completely accurate debate standings 
 
 Pretty easy (as long as you have Ruby installed): just download the contents of the `lib` folder into its very own 
 directory on your computer and run `interface.rb`. Use `new` to input results from a tournament and `export` to export 
-standings to a text file. It requires at least Ruby 2.1.0.
+standings to a text file. It requires at least Ruby 2.1.0. If you don't have Ruby, check out the language's 
+[website](https://www.ruby-lang.org/en/).
 
 ## Organization
 
