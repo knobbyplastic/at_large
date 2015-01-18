@@ -6,7 +6,7 @@ require 'csv'
 #   variables the #update method takes the names of placing competitors and
 #   writes them to the data file.
 class Event
-  def initialize(tournament_name, event_name, *no_of_competitors)
+  def initialize(tournament_name, event_name, no_of_competitors, number_breaking = [])
     @event_name = event_name
     @tournament_name = tournament_name
 
@@ -20,8 +20,8 @@ class Event
     new_tournament
 
     @event = CSV.read("#{event_name}.csv", headers: true)
-    @no_of_competitors = no_of_competitors.first
-    @number_breaking = no_of_competitors.last
+    @no_of_competitors = no_of_competitors
+    @number_breaking = number_breaking
   end
 
   def new_tournament
